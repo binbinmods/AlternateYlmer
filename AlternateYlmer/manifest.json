@@ -1,0 +1,10 @@
+{
+  "name": "Alternate_Ylmer",
+  "version_number": "0.1.0",
+  "website_url": "https://github.com/binbinmods/AlternateYlmer",
+  "description": "Adds a new set of possible Act 1 Boss fights. More coming soon!",
+  "dependencies": [
+    "meds-Obeliskial_Content-1.5.6",
+    "meds-Obeliskial_Essentials-1.4.9"
+  ]
+}
