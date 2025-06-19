@@ -1,6 +1,6 @@
 {
-  "medsEvent": "e_sen33",
-  "medsTempID": "e_sen33_a_<ToReplace>",
+  "medsEvent": "e_sen33_a",
+  "medsTempID": "e_sen33_a_<toReplace>",
   "DustCost": 0,
   "GoldCost": 0,
   "IndexForAnswerTranslation": 10001,
@@ -52,7 +52,7 @@
   "SSRequirementUnlock2": "",
   "SSRewardHealthFlat": 0,
   "SSRewardHealthPercent": 0,
-  "SSRewardText": "Ylmer, the once mightly tree has fallen to a <ToReplace> corruption. You advance cautiously, with weapons drawn to engage him.",
+  "SSRewardText": "Ylmer, the once mightly tree has fallen to a <toReplace> corruption. You advance cautiously, with weapons drawn to engage him.",
   "SSRewardTier": "",
   "SSRoll": false,
   "SSRollCard": "None",

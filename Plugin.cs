@@ -44,10 +44,7 @@ namespace AlternateYlmer
 
         public static ConfigEntry<bool> EnableMod { get; set; }
         public static ConfigEntry<bool> EnableDebugging { get; set; }
-        public static ConfigEntry<bool> EnableRandomJavelins { get; set; }
         // public static ConfigEntry<bool> EnableIncreasedRods { get; set; }
-        public static ConfigEntry<bool> EnableBonusJavelins { get; set; }
-        public static ConfigEntry<bool> ChangeAllNames { get; set; }
 
         internal int ModDate = int.Parse(DateTime.Today.ToString("yyyyMMdd"));
         private readonly Harmony harmony = new(PluginInfo.PLUGIN_GUID);
@@ -66,9 +63,9 @@ namespace AlternateYlmer
             // Sets the title, default values, and descriptions
             EnableMod = Config.Bind(new ConfigDefinition("AlternateYlmer", "EnableMod"), true, new ConfigDescription("Enables the mod. If false, the mod will not work then next time you load the game."));
             EnableDebugging = Config.Bind(new ConfigDefinition("AlternateYlmer", "EnableDebugging"), true, new ConfigDescription("Enables the debugging"));
-            EnableRandomJavelins = Config.Bind(new ConfigDefinition("AlternateYlmer", "Random Javelins"), true, new ConfigDescription("Storm Javelin is now a card reward for all."));
-            EnableBonusJavelins = Config.Bind(new ConfigDefinition("AlternateYlmer", "Bonus Javelins"), true, new ConfigDescription("Chace to shuffle Javelins into your deck each turn."));
-            ChangeAllNames = Config.Bind(new ConfigDefinition("AlternateYlmer", "ChangeAllNames"), false, new ConfigDescription("Makes it so that all cards are named Storm Javelin. Restart the game upon changing this."));
+            // EnableRandomJavelins = Config.Bind(new ConfigDefinition("AlternateYlmer", "Random Javelins"), true, new ConfigDescription("AlternateYlmer is now a card reward for all."));
+            // EnableBonusJavelins = Config.Bind(new ConfigDefinition("AlternateYlmer", "Bonus Javelins"), true, new ConfigDescription("Chace to shuffle Javelins into your deck each turn."));
+            // ChangeAllNames = Config.Bind(new ConfigDefinition("AlternateYlmer", "ChangeAllNames"), false, new ConfigDescription("Makes it so that all cards are named AlternateYlmer. Restart the game upon changing this."));
 
 
             // DevMode = Config.Bind(new ConfigDefinition("AlternateYlmer", "DevMode"), false, new ConfigDescription("Enables all of the things for testing."));
@@ -78,7 +75,7 @@ namespace AlternateYlmer
             RegisterMod(
                 _name: PluginInfo.PLUGIN_NAME,
                 _author: "binbin",
-                _description: "Storm Javelin",
+                _description: "AlternateYlmer",
                 _version: PluginInfo.PLUGIN_VERSION,
                 _date: ModDate,
                 _link: @"https://github.com/binbinmods/AlternateYlmer",
@@ -87,22 +84,9 @@ namespace AlternateYlmer
 
 
 
-            string text = $"{medsSpriteText("fast")}{medsSpriteText("evasion")}{medsSpriteText("buffer")} stack on this character.";
-            string cardId = "montproliferate";
-            AddTextToCardDescription(text, TextLocation.ItemBeginning, cardId, includeAB: true);
-
-
-            text = $"{medsSpriteText("fast")} can stack on this character.";
-            cardId = "montnimblehops";
-            AddTextToCardDescription(text, TextLocation.ItemBeforeActivation, cardId, includeAB: true);
-
-            text = $"{medsSpriteText("zeal")}{medsSpriteText("buffer")} can stack on this character.\n{medsSpriteText("sharp")} increases {medsSpriteText("mind")} by 1 per stack.";
-            cardId = "montluxuriouscoat";
-            AddTextToCardDescription(text, TextLocation.ItemBeforeActivation, cardId, includeAB: true);
-
-            text = $"{medsSpriteText("evasion")} on monsters can stack.";
-            cardId = "montdistraction";
-            AddTextToCardDescription(text, TextLocation.ItemBeforeActivation, cardId, includeAB: true);
+            // text = $"{medsSpriteText("evasion")} on monsters can stack.";
+            // cardId = "montdistraction";
+            // AddTextToCardDescription(text, TextLocation.ItemBeforeActivation, cardId, includeAB: true);
 
             // apply patches, this functionally runs all the code for Harmony, running your mod
             if (EnableMod.Value) { harmony.PatchAll(); }
