@@ -41,10 +41,11 @@ namespace AlternateYlmer
                 LogDebug("DoCombatPrefix - Getting Combat Data for Ylmer - Random");
                 try
                 {
-                    List<string> combats = ["esen_33a", "esen_33a_vile"];
+                    List<string> combats = ["esen_33a", "esen_33a_vile", "esen_33a_warded"];
                     int randInd = MapManager.Instance.GetRandomIntRange(0, combats.Count);
                     string randomCombat = combats[randInd];
                     _combatData = Globals.Instance.GetCombatData(randomCombat);
+                    LogDebug("DoCombatPrefix - Random Combat Loading: " + randomCombat);
                 }
                 catch (Exception e)
                 {
