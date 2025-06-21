@@ -1,0 +1,8 @@
+{
+    "NewGameObjectID": "dryad<toReplace>",
+    "BaseGameObjectID": "dryada",
+    "SpriteToUse": "dryad<toReplace>",
+    "ScaleX": 1.00,
+    "ScaleY": 1.00,
+    "Flip": false
+}

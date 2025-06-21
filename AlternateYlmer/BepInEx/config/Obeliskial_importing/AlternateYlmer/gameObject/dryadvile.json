@@ -1,0 +1,8 @@
+{
+    "NewGameObjectID": "dryadvile",
+    "BaseGameObjectID": "dryada",
+    "SpriteToUse": "dryadvile",
+    "ScaleX": 1.00,
+    "ScaleY": 1.00,
+    "Flip": false
+}

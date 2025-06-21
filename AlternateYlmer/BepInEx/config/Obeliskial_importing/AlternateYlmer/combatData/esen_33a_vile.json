@@ -10,8 +10,8 @@
     "EventRequirementData": "",
     "HealHeroes": false,
     "NPCList": [
-        "taintedtrunky",
-        "tainteddryad",
+        "dryadvilea",
+        "dryadvileb",
         "ylmervile"
     ],
     "NPCRemoveInMadness0Index": -1,
