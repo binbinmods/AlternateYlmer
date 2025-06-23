@@ -33,15 +33,13 @@ namespace AlternateYlmer
         public static void DoCombatPrefix(MapManager __instance, ref CombatData _combatData)
         {
 
-            // LogDebug($"DoCombatPrefix: {string.Join(", ", AtOManager.Instance.bossesKilledName ?? new List<string>())}");
-            // bool killedLordMont = AtOManager.Instance.bossesKilledName != null && AtOManager.Instance.bossesKilledName.Any<string>((Func<string, bool>)(s => s.StartsWith("lordmontimus", StringComparison.OrdinalIgnoreCase)));
-            LogDebug($"Loading Combat - {_combatData?.CombatId ?? "null combat"}");
-            if (_combatData.CombatId == "esen_33random")
+            LogDebug($"DoCombatPrefix - Loading Combat - {_combatData?.CombatId ?? "null combat"}");
+            if (_combatData.CombatId == "esen_33a_random")
             {
                 LogDebug("DoCombatPrefix - Getting Combat Data for Ylmer - Random");
                 try
                 {
-                    List<string> combats = ["esen_33a", "esen_33a_vile", "esen_33a_warded"];
+                    List<string> combats = ["esen_33a_vile", "esen_33a_warded"];//"esen_33a", 
                     int randInd = MapManager.Instance.GetRandomIntRange(0, combats.Count);
                     string randomCombat = combats[randInd];
                     _combatData = Globals.Instance.GetCombatData(randomCombat);
