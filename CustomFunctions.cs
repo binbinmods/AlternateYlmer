@@ -805,7 +805,7 @@ namespace AlternateYlmer
 
             bool correctCharacterType = (characterOfInterest.IsHero && appliesTo == AppliesTo.Heroes) || (!characterOfInterest.IsHero && appliesTo == AppliesTo.Monsters) || appliesTo == AppliesTo.Global;
             bool hasPerk = AtOManager.Instance.CharacterHavePerk(characterOfInterest.SubclassName, perkBase + perkName) || AtOManager.Instance.CharacterHavePerk(characterOfInterest.SubclassName, perkName);
-            //disarm1b - cannot be dispelled unless specified, increases resists by 10%
+            //rust1b - cannot be dispelled unless specified, increases resists by 10%
 
             return hasPerk && correctCharacterType;
         }

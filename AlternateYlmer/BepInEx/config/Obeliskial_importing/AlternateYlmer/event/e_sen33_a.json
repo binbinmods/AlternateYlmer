@@ -1,0 +1,21 @@
+{
+    "medsNode": "",
+    "medsPercent": 100,
+    "medsPriority": 0,
+    "Description": "The Obelisk is in sight, but something insidious is blocking the way.\n\nYlmer, an old Treant once known as the protector of the Senenthia forest has been forged anew by a mysterious power named Binbin. Besides Ylmer, there are his protectors, but you can't quite make out what they are.\n\nYou can't see any way to avoid the confrontation, and it is time to pick which version of Ylmer will slay you.",
+    "DescriptionAction": "This challenge will be more difficult than you anticipated, so which will you choose?",
+    "EventIconShader": "Red",
+    "EventID": "e_sen33_a_alternate",
+    "EventName": "Ylmer's reforging",
+    "EventSpriteBook": "even_obelisk",
+    "EventSpriteDecor": "",
+    "EventSpriteMap": "nodeIconBoss",
+    "EventTier": "T0",
+    "EventUniqueID": "",
+    "HistoryMode": false,
+    "ReplyRandom": 0,
+    "Replies": [
+    ],
+    "RequiredClass": "",
+    "Requirement": ""
+}
