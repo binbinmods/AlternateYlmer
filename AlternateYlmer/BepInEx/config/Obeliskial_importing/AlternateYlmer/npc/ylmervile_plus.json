@@ -1,10 +1,12 @@
 {
     "AICards": [
         "{\n    \"AddCardRound\": 0,\n    \"AuraCurseCastIf\": \"\",\n    \"Card\": \"flowershurikena\",\n    \"OnlyCastIf\": \"Always\",\n    \"PercentToCast\": 0.0,\n    \"Priority\": 10,\n    \"TargetCast\": \"Random\",\n    \"UnitsInDeck\": 4,\n    \"ValueCastIf\": 0.0\n}",
+        "",
         "{\n    \"AddCardRound\": 13,\n    \"AuraCurseCastIf\": \"\",\n    \"Card\": \"moonbeama\",\n    \"OnlyCastIf\": \"Always\",\n    \"PercentToCast\": 0.0,\n    \"Priority\": 24,\n    \"TargetCast\": \"Random\",\n    \"UnitsInDeck\": 3,\n    \"ValueCastIf\": 0.0\n}"
     ],
     "AuraCurseImmune": [
         "paralyze",
+        "rust",
         "weak"
     ],
     "BaseMonster": "",
@@ -33,12 +35,12 @@
     "PreferredPosition": "Back",
     "ResistBlunt": -5,
     "ResistCold": 27,
-    "ResistFire": 44,
-    "ResistHoly": 20,
-    "ResistLightning": 40,
-    "ResistMind": 49 ,
+    "ResistFire": 49,
+    "ResistHoly": 0,
+    "ResistLightning": 45,
+    "ResistMind": 54 ,
     "ResistPiercing": 4,
-    "ResistShadow": 51,
+    "ResistShadow": 55,
     "ResistSlashing": -5,
     "ScriptableObjectName": "ylmervile",
     "Speed": 11,

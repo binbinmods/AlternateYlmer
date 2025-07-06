@@ -5,24 +5,26 @@ This mod adds Alternate Ylmer fights. Thats it.
 Currently includes:
 
 1. Vile Ylmer
+1. Warded Ylmer
 
 Planned to include:
 
-1. Warded Ylmer
-2. Petrified Ylmer
-3. Blooming Ylmer
-4. Aflame Ylmer
-5. Tempestuous Ylmer
-6. Chaotic Ylmer
-7. Honed Ylmer
-8. Reinforced Ylmer
-9. Unholy Ylmer
+1. Petrified Ylmer
+2. Blooming Ylmer
+3. Aflame Ylmer
+4. Tempestuous Ylmer
+5. Chaotic Ylmer
+6. Honed Ylmer
+7. Reinforced Ylmer
+8. Unholy Ylmer
 
 And potentially more.
 
 These enemies are intended to be _slightly_ harder than the regular Ylmer fight for most comps, but easier for others, as such any Balancing Suggestions are extremely welcome!
 
 In order to fight either an Alternate Ylmer, all you have to do is make it to the end of Act 1 and choose the appropriate dialogue option. There is also an option for a random combat, which predictably gives you a random Ylmer to fight.
+
+All fights currently have the same loot drop at the end. This is likely to change at some point.
 
 If you have any suggestions for things you would like to see, let me know! Likewise, if you come across any issues, pleae ping me on the [Across the Obelisk Modding Discord](https://discord.gg/across-the-obelisk-679706811108163701). :)
 

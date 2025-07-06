@@ -62,7 +62,7 @@ namespace AlternateYlmer
 
             // Sets the title, default values, and descriptions
             EnableMod = Config.Bind(new ConfigDefinition("AlternateYlmer", "EnableMod"), true, new ConfigDescription("Enables the mod. If false, the mod will not work then next time you load the game."));
-            EnableDebugging = Config.Bind(new ConfigDefinition("AlternateYlmer", "EnableDebugging"), true, new ConfigDescription("Enables the debugging"));
+            EnableDebugging = Config.Bind(new ConfigDefinition("AlternateYlmer", "EnableDebugging"), false, new ConfigDescription("Enables the debugging"));
             // EnableRandomJavelins = Config.Bind(new ConfigDefinition("AlternateYlmer", "Random Javelins"), true, new ConfigDescription("AlternateYlmer is now a card reward for all."));
             // EnableBonusJavelins = Config.Bind(new ConfigDefinition("AlternateYlmer", "Bonus Javelins"), true, new ConfigDescription("Chace to shuffle Javelins into your deck each turn."));
             // ChangeAllNames = Config.Bind(new ConfigDefinition("AlternateYlmer", "ChangeAllNames"), false, new ConfigDescription("Makes it so that all cards are named AlternateYlmer. Restart the game upon changing this."));
